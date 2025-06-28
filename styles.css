@@ -271,27 +271,56 @@ section {
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 20px;
   margin-top: 30px;
+  padding: 20px;
+  background: rgba(230, 0, 255, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(230, 0, 255, 0.2);
 }
 
-.skill-tag {
-  background: rgba(230, 0, 255, 0.2);
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.9em;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(230, 0, 255, 0.3);
+.skills i {
+  font-size: 3rem;
+  color: #ffffff;
   transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.skill-tag:hover {
-  background: rgba(230, 0, 255, 0.4);
-  transform: translateY(-3px);
+.skills i:hover {
+  transform: translateY(-10px) scale(1.1);
+  color: #e600ff;
+  background: rgba(230, 0, 255, 0.2);
+  border-color: rgba(230, 0, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(230, 0, 255, 0.3);
 }
+
+/* Colores específicos para cada tecnología */
+.skills i[class*="html5"]:hover { color: #e34f26; }
+.skills i[class*="css3"]:hover { color: #1572b6; }
+.skills i[class*="javascript"]:hover { color: #f7df1e; }
+.skills i[class*="react"]:hover { color: #61dafb; }
+.skills i[class*="nodejs"]:hover { color: #339933; }
+.skills i[class*="mysql"]:hover { color: #4479a1; }
+.skills i[class*="docker"]:hover { color: #2496ed; }
+.skills i[class*="kubernetes"]:hover { color: #326ce5; }
+.skills i[class*="amazonwebservices"]:hover { color: #ff9900; }
+.skills i[class*="github"]:hover { color: #181717; }
+.skills i[class*="postman"]:hover { color: #ff6c37; }
+.skills i[class*="figma"]:hover { color: #f24e1e; }
+.skills i[class*="vite"]:hover { color: #646cff; }
+.skills i[class*="java"]:hover { color: #ed8b00; }
+.skills i[class*="gradle"]:hover { color: #02303a; }
+
 #yoSeccion {
   width: 100%;
   max-width: 400px;
@@ -672,6 +701,15 @@ section {
   #mainNav ul {
     gap: 30px;
   }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 15px;
+  }
+
+  .skills i {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -754,6 +792,12 @@ section {
 
   .skills {
     justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    gap: 12px;
+  }
+
+  .skills i {
+    font-size: 2rem;
   }
 
   .about-image {
@@ -864,6 +908,17 @@ section {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .skills i {
+    font-size: 1.8rem;
+    padding: 8px;
   }
 
   .projects-container h2 {
