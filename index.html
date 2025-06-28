@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     </head>
     <body>
         <div id="menuOverlay" class="overlay"></div>
@@ -41,22 +41,33 @@
                     <p>Con experiencia en desarrollo front-end y back-end, disfruto enfrentando nuevos desafíos y aprendiendo continuamente nuevas tecnologías para mejorar mis habilidades.</p>
                     <p>Me encanta la música, los videojuegos y los desafios de gran calibre trabajando en equipo.</p>
                     
-                    <div class="skills">
-                        <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
-                        <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
-                        <i class="devicon-javascript-plain" title="JavaScript"></i>
-                        <i class="devicon-react-original-wordmark" title="React"></i>
-                        <i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
-                        <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
-                        <i class="devicon-docker-plain-wordmark" title="Docker"></i>
-                        <i class="devicon-kubernetes-plain-wordmark" title="Kubernetes"></i>
-                        <i class="devicon-amazonwebservices-plain-wordmark" title="AWS"></i>
-                        <i class="devicon-github-original-wordmark" title="GitHub"></i>
-                        <i class="devicon-postman-plain" title="Postman"></i>        
-                        <i class="devicon-figma-plain" title="Figma"></i>
-                        <i class="devicon-vite-original" title="Vite"></i>
-                        <i class="devicon-java-plain" title="Java"></i>
-                        <i class="devicon-gradle-original" title="Gradle"></i>
+                    <div class="skills-section">
+                        <div class="skills-category">
+                            <h3 class="skills-title">Frontend</h3>
+                            <div class="skills frontend-skills">
+                                <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+                                <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+                                <i class="devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="devicon-react-original-wordmark" title="React"></i>
+                                <i class="devicon-vite-original" title="Vite"></i>
+                                <i class="devicon-figma-plain" title="Figma"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3 class="skills-title">Backend & DevOps</h3>
+                            <div class="skills backend-skills">
+                                <i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
+                                <i class="devicon-java-plain" title="Java"></i>
+                                <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+                                <i class="devicon-docker-plain-wordmark" title="Docker"></i>
+                                <i class="devicon-kubernetes-plain-wordmark" title="Kubernetes"></i>
+                                <i class="devicon-amazonwebservices-plain-wordmark" title="AWS"></i>
+                                <i class="devicon-github-original-wordmark" title="GitHub"></i>
+                                <i class="devicon-postman-plain" title="Postman"></i>
+                                <i class="devicon-gradle-original" title="Gradle"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-image">
@@ -93,36 +104,114 @@
         </section>
         
         <section id="contact">
-    <div class="contact-container">
-        <h2>Contacto</h2>
-        <p>¿Querés trabajar conmigo o tenés alguna consulta? ¡Contactame!</p>
-        
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="contact-icon">✉️</i>
-                <h3>Email</h3>
-                <a href="mailto:ariebalmacedafunez@gmail.com">ariebalmacedafunez@gmail.com</a>
+            <div class="contact-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
             </div>
-            <div class="contact-item">
-                <i class="contact-icon">📱</i>
-                <h3>Teléfono</h3>
-                <a href="tel:+123456789">+XX XXXX XXXX</a>
+            
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="contact-title">¡Hablemos!</h2>
+                    <p class="contact-subtitle">¿Tenés una idea increíble? ¡Hagámosla realidad juntos!</p>
+                    <div class="contact-emoji">🚀</div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info-grid">
+                        <div class="contact-card email-card">
+                            <div class="card-icon">
+                                <i class="devicon-google-plain"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:ariebalmacedafunez@gmail.com">ariebalmacedafunez@gmail.com</a>
+                            <div class="card-decoration"></div>
+                        </div>
+                        
+                        <div class="contact-card phone-card">
+                            <div class="card-icon">
+                                📱
+                            </div>
+                            <h3>WhatsApp</h3>
+                            <a href="tel:+123456789">+XX XXXX XXXX</a>
+                            <div class="card-decoration"></div>
+                        </div>
+                        
+                        <div class="contact-card location-card">
+                            <div class="card-icon">
+                                🌎
+                            </div>
+                            <h3>Ubicación</h3>
+                            <p>Buenos Aires, Argentina</p>
+                            <div class="card-decoration"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3>Enviame un mensaje</h3>
+                            <p>¡No seas tímido! Contame sobre tu proyecto</p>
+                        </div>
+                        
+                        <form class="contact-form" action="mailto:ariebalmacedafunez@gmail.com" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="text" name="nombre" placeholder=" " required>
+                                    <label>Tu nombre</label>
+                                    <div class="input-highlight"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <input type="email" name="email" placeholder=" " required>
+                                    <label>Tu correo</label>
+                                    <div class="input-highlight"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-container">
+                                    <textarea name="mensaje" rows="5" placeholder=" " required></textarea>
+                                    <label>Tu mensaje</label>
+                                    <div class="input-highlight"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Enviar Mensaje</span>
+                                <span class="btn-icon">✨</span>
+                                <div class="btn-ripple"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <p>O conectá conmigo en:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" class="social-link github">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-link linkedin">
+                            <i class="devicon-linkedin-plain"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-link twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-                <i class="contact-icon">📍</i>
-                <h3>Ubicación</h3>
-                <p>Buenos Aires, Argentina</p>
-            </div>
-        </div>
-        
-        <form action="mailto:ariebalmacedafunez@gmail.com" method="POST" enctype="text/plain">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo" required>
-            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </div>
-</section>
+        </section>
 
         
         <script src="script.js"></script>
